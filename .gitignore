@@ -1,5 +1,19 @@
-.terraform/  
-terraform.tfstate  
-terraform.tfstate.backup  
-.terraform.lock.hcl  
-*.tfvars  
+# Terraform working directory
+.terraform/
+
+# Terraform state files (contain sensitive data)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform lock file (can be safely ignored)
+.terraform.lock.hcl
+
+# Variable files (often contain secrets)
+terraform.tfvars
+*.auto.tfvars
+
+# Crash logs (generated if Terraform crashes)
+crash.log
+
+# Plan output files (can be large and unnecessary in Git)
+*.tfplan
