@@ -7,6 +7,7 @@ terraform.tfstate.backup
 
 # Terraform lock file (can be safely ignored)
 .terraform.lock.hcl
+.terraform.tfstate.lock.info
 
 # Variable files (often contain secrets)
 terraform.tfvars
