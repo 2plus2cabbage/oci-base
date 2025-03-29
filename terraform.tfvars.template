@@ -1,0 +1,9 @@
+tenancy_ocid     = "<your-tenancy-ocid>"      # Your OCI tenancy ID, found in OCI console under Tenancy
+user_ocid        = "<your-user-ocid>"         # Your OCI user ID, found in OCI console under User Settings
+fingerprint      = "<your-fingerprint>"       # Fingerprint of your API key, generated when creating the key pair
+private_key_path = "<path-to-private-key>"    # Local path to your private key file
+region           = "<your-region>"            # OCI region for deployment
+compartment_ocid = "<your-compartment-ocid>"  # Your compartment ID, found in OCI console under Compartments
+environment_name = "<your-environment-name>"  # Name for your environment, used in resource naming (e.g., sandbox)
+location         = "<your-location>"          # Location identifier, used in resource naming (e.g., eastus)
+my_public_ip     = "<your-public-ip>"         # Your public IP for RDP access
