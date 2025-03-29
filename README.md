@@ -3,6 +3,7 @@
 Deploys a Windows Server 2022 VM in Oracle Cloud Infrastructure (OCI) with RDP and internet access.
 
 ## Files
+The project is split into multiple files to illustrate modularity and keep separate constructs distinct, making it easier to manage and understand.
 - `main.tf`: Terraform provider block (`hashicorp/oci`).
 - `ociprovider.tf`: OCI provider config with `tenancy_ocid`, `user_ocid`, etc.
 - `variables.tf`: Variables and locals for tenancy, compartment, region, etc.
