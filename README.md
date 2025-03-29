@@ -31,3 +31,4 @@ The project is split into multiple files to illustrate modularity and keep separ
 3. Get the public IP from the `oci_vm_public_ip` output on the screen, or run `terraform output oci_vm_public_ip`, or check in the OCI Console under **Compute > Instances**.
 4. Get the initial password in the OCI Console under **Compute > Instances > [click running instance] > Click Show next to Initial Password**.
 5. Use Remote Desktop to log in with the `opc` user and initial password; change the password on first login.
+6. To remove all resources, run `terraform destroy` (type `yes`).
