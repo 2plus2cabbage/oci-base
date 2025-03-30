@@ -1,4 +1,4 @@
-![oci-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/oci-base.jpg)
+![oci-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/oci-base.png)
 
 # OCI Windows Instance Terraform Deployment
 
