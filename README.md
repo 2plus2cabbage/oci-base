@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./oci-base.jpg" style="display: block; margin: 0; padding: 0;">
+</p>
 # OCI Windows Instance Terraform Deployment
 
 Deploys a Windows Server 2022 VM in Oracle Cloud Infrastructure (OCI) with RDP and internet access.
