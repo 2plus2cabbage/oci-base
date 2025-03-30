@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/oci-base.jpg" style="display: block; margin: 0; padding: 0;">
-</p>
+![oci-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/oci-base.jpg)
 
 # OCI Windows Instance Terraform Deployment
 
