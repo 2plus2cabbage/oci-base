@@ -3,7 +3,6 @@
 <img src="https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/oci-base.png" alt="oci-base" width="300" align="left">
 <br clear="left">
 
-
 # OCI Windows Instance Terraform Deployment
 
 Deploys a Windows Server 2022 VM in Oracle Cloud Infrastructure (OCI) with RDP and internet access.
@@ -12,10 +11,10 @@ Deploys a Windows Server 2022 VM in Oracle Cloud Infrastructure (OCI) with RDP a
 The project is split into multiple files to illustrate modularity and keep separate constructs distinct, making it easier to manage and understand.
 - `main.tf`: Terraform provider block (`hashicorp/oci`).
 - `ociprovider.tf`: OCI provider config with `tenancy_ocid`, `user_ocid`, etc.
-- `variables.tf`: Variables and locals for tenancy, compartment, region, etc.
+- `variables.tf`: Variables for tenancy, compartment, region, etc.
 - `terraform.tfvars.template`: Template for sensitive/custom values; rename to `terraform.tfvars` and add your credentials.
 - `locals.tf`: Local variables for naming conventions.
-- `networking.tf`: VCN, subnet, internet gateway.
+- `oci-networking.tf`: VCN, subnet, internet gateway.
 - `securitylist.tf`: Security list for RDP (TCP 3389) and outbound traffic.
 - `routing-static.tf`: Route table for internet access.
 - `windows.tf`: Windows VM, outputs public/private IPs.
@@ -35,8 +34,8 @@ The project is split into multiple files to illustrate modularity and keep separ
 1. Update `terraform.tfvars` with OCI credentials and your public IP in `my_public_ip`.
 2. Run `terraform init`, then (optionally) `terraform plan` to preview changes, then `terraform apply` (type `yes`).
 3. Get the public IP from the `oci_vm_public_ip` output on the screen, or run `terraform output oci_vm_public_ip`, or check in the OCI Console under **Compute > Instances**.
-4. Get the initial password in the OCI Console under **Compute > Instances > [click running instance] > Click Show next to Initial Password**.
-5. Use Remote Desktop to log in with the `opc` user and initial password; change the password on first login.
+4. Retrieve the initial password in the OCI Console under **Compute > Instances > [select instance] > Resources > Instance Access > Click Show next to Initial Password**.
+5. Use Remote Desktop to log in with the `opc` user and the retrieved initial password.
 6. To remove all resources, run `terraform destroy` (type `yes`).
 
 ## Potential costs and licensing
